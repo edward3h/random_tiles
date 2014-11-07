@@ -117,7 +117,7 @@ $ ->
     choose_color(cell) for cell in cells
     
   draw()
-  
+  $(window).load(draw) 
   $('#generate').click(draw)
 
 
