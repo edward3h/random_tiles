@@ -2,6 +2,7 @@
 <head><title>Tiling</title>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <style>
+label, div {margin: 3px;}
 label {display:block;}
 #foot {clear:both;}
 div.tile {float: left;}
@@ -19,6 +20,7 @@ div.tile img {width:50px; height:50px;}
 <label for="wv">Weight vertical <input id="wv" value=50 size=3></label>
 <label for="wd1">Weight diagonal 1 <input id="wd1" value=1 size=3></label>
 <label for="wd2">Weight diagonal 2 <input id="wd2" value=1 size=3></label>
+<div>Weights by tiles control ratio of number available. Enter 0 to not use that tile.</div>
 <div class="tile" id="tile1"><img src="donkey_island.jpg"><input type="text" value="3" size=3></div>
 <div class="tile" id="tile2"><img src="butter.jpg"><input type="text" value="1" size=3></div>
 <div class="tile" id="tile3"><img src="eiger.jpg"><input type="text" value="1" size=3></div>
