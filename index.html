@@ -1,0 +1,36 @@
+<html>
+<head><title>Tiling</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+label {display:block;}
+#foot {clear:both;}
+div.tile {float: left;}
+div.tile img {width:50px; height:50px;}
+</style></head>
+<body>
+<h1>Random kitchen tiling</h1>
+<canvas id="floor" width="750" height="600">
+</canvas>
+<div id="status"></div>
+<label for="cols">Columns <input id="cols" value=14 size=3></label>
+<label for="rows">Rows <input id="rows" value=12 size=3></label>
+<label for="wn">Clumpiness <input id="wn" value=5 size=3></label>
+<label for="wh">Weight horizontal <input id="wh" value=50 size=3></label>
+<label for="wv">Weight vertical <input id="wv" value=50 size=3></label>
+<label for="wd1">Weight diagonal 1 <input id="wd1" value=1 size=3></label>
+<label for="wd2">Weight diagonal 2 <input id="wd2" value=1 size=3></label>
+<div class="tile" id="tile1"><img src="donkey_island.jpg"><input type="text" value="3" size=3></div>
+<div class="tile" id="tile2"><img src="butter.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile3"><img src="eiger.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile4"><img src="stardust.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile5"><img src="shitake.jpg"><input type="text" value="0" size=3></div>
+<script src="tile_generator.js"></script>
+<div id="foot"><input type="button" value="Generate!" id="generate"></div>
+<div>
+Based on <a href="http://www.cl.cam.ac.uk/research/rainbow/projects/coloursampling/">
+Random discrete colour sampling</a> by Henrik Lieng, Christian Richardt, Neil A. Dodgson.
+I have not validated that my implementation is a fully correct match for their
+algorithm.
+</div>
+</body>
+</html>
