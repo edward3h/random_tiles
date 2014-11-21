@@ -4,7 +4,7 @@
 <style>
 label, div {margin: 3px;}
 label {display:block;}
-#foot {clear:both;}
+.foot {clear:both;}
 div.tile {float: left;}
 div.tile img {width:50px; height:50px;}
 </style></head>
@@ -21,13 +21,25 @@ div.tile img {width:50px; height:50px;}
 <label for="wd1">Weight diagonal 1 <input id="wd1" value=1 size=3></label>
 <label for="wd2">Weight diagonal 2 <input id="wd2" value=1 size=3></label>
 <div>Weights by tiles control ratio of number available. Enter 0 to not use that tile.</div>
-<div class="tile" id="tile1"><img src="donkey_island.jpg"><input type="text" value="3" size=3></div>
-<div class="tile" id="tile2"><img src="butter.jpg"><input type="text" value="1" size=3></div>
-<div class="tile" id="tile3"><img src="eiger.jpg"><input type="text" value="1" size=3></div>
-<div class="tile" id="tile4"><img src="stardust.jpg"><input type="text" value="0" size=3></div>
-<div class="tile" id="tile5"><img src="shitake.jpg"><input type="text" value="0" size=3></div>
+<div class="foot">
+<div class="foot">Marmoleum Modular</div>
+<div class="tile" id="tile1">Donkey Island<img src="donkey_island.jpg"><input type="text" value="3" size=3></div>
+<div class="tile" id="tile2">Butter<img src="butter.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile3">Eiger<img src="eiger.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile4">Stardust<img src="stardust.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile5">Shitake<img src="shitake.jpg"><input type="text" value="0" size=3></div>
+</div>
+<div class="foot">
+<div class="foot">Marmoleum Click</div>
+<div class="tile" id="tile11">Barbados<img src="click_barbados.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile12">Camel<img src="click_camel.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile13">Natural Corn<img src="click_corn.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile14">Shitake<img src="click_shitake.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile15">Sky Blue<img src="click_skyblue.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile16">Van Gogh<img src="click_vangogh.jpg"><input type="text" value="0" size=3></div>
+</div>
 <script src="tile_generator.js"></script>
-<div id="foot"><input type="button" value="Generate!" id="generate"></div>
+<div class="foot"><input type="button" value="Generate!" id="generate"></div>
 <div>
 Based on <a href="http://www.cl.cam.ac.uk/research/rainbow/projects/coloursampling/">
 Random discrete colour sampling</a> by Henrik Lieng, Christian Richardt, Neil A. Dodgson.

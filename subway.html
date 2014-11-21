@@ -1,0 +1,42 @@
+<html>
+<head><title>Tiling</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+label, div {margin: 3px;}
+label {display:block;}
+.foot {clear:both;}
+div.tile {float: left;}
+div.tile img {width:50px; height:50px;}
+</style></head>
+<body>
+<h1>Random kitchen tiling</h1>
+<canvas id="floor" width="750" height="300">
+</canvas>
+<div id="status"></div>
+<label for="cols">Columns <input id="cols" value=17 size=3></label>
+<label for="rows">Rows <input id="rows" value=10 size=3></label>
+<label for="wn">Clumpiness <input id="wn" value=5 size=3></label>
+<label for="wh">Weight horizontal <input id="wh" value=1 size=3></label>
+<label for="wd1">Weight diagonal 1 <input id="wd1" value=1 size=3></label>
+<label for="wd2">Weight diagonal 2 <input id="wd2" value=1 size=3></label>
+<div>Weights by tiles control ratio of number available. Enter 0 to not use that tile.</div>
+<div class="foot">
+<div class="foot">American Olean</div>
+<div class="tile" id="tile21">White<img src="AO_0090_6x6_White.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile22">Biscuit<img src="AO_0091_8X8_Biscuit2.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile23">Marshmallow<img src="AO_0065_6x6_Marshmallow.jpg"><input type="text" value="1" size=3></div>
+<div class="tile" id="tile24">Almond<img src="glossalmond.jpg"><input type="text" value="1" size=3></div>
+</div>
+<script src="subway_tile.js"></script>
+<div class="foot"><input type="button" value="Generate!" id="generate"></div>
+<div>
+Based on <a href="http://www.cl.cam.ac.uk/research/rainbow/projects/coloursampling/">
+Random discrete colour sampling</a> by Henrik Lieng, Christian Richardt, Neil A. Dodgson.
+I have not validated that my implementation is a fully correct match for their
+algorithm.
+</div>
+<div>Floor tile images from <a href="http://www.forboflooringna.com/Commercial-Flooring/Products/Marmoleum/Marmoleum-Modular/">
+Forbo Flooring - Marmoleum Modular</a>. Used without permission. (But I do expect to buy a room's worth of their tiles soon)</div>
+<div><a href="https://github.com/edward3h/random_tiles">Source code on Github</a></div>
+</body>
+</html>

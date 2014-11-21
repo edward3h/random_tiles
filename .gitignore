@@ -1,2 +1,8 @@
 
 tile_generator.js
+
+*.html~
+
+*.coffee~
+
+subway_tile.js
