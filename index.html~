@@ -38,6 +38,14 @@ div.tile img {width:50px; height:50px;}
 <div class="tile" id="tile15">Sky Blue<img src="click_skyblue.jpg"><input type="text" value="0" size=3></div>
 <div class="tile" id="tile16">Van Gogh<img src="click_vangogh.jpg"><input type="text" value="0" size=3></div>
 </div>
+
+<div class="foot">
+<div class="foot">American Olean</div>
+<div class="tile" id="tile21">White<img src="AO_0090_6x6_White.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile22">Biscuit<img src="AO_0091_8X8_Biscuit2.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile23">Marshmallow<img src="AO_0065_6x6_Marshmallow.jpg"><input type="text" value="0" size=3></div>
+<div class="tile" id="tile24">Almond<img src="glossalmond.jpg"><input type="text" value="0" size=3></div>\
+</div>
 <script src="tile_generator.js"></script>
 <div class="foot"><input type="button" value="Generate!" id="generate"></div>
 <div>
